@@ -2,7 +2,7 @@ export default function Filters({
   category, setCategory, 
   priceRange, setPriceRange, 
   sortOrder, setSortOrder,
-  categories // We will pass the list of available categories here
+  categories 
 }) {
   return (
     <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">

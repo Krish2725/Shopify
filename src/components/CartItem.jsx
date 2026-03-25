@@ -1,6 +1,6 @@
 import { useCart } from '../hooks/useCart';
 import { Link } from 'react-router-dom';
-import { FiTrash2 } from 'react-icons/fi'; // Let's use a nice trash icon for removing
+import { FiTrash2 } from 'react-icons/fi'; 
 
 export default function CartItem({ item }) {
   const { updateQuantity, removeFromCart } = useCart();
@@ -23,7 +23,6 @@ export default function CartItem({ item }) {
         </div>
       </div>
 
-      {/* Modern Pill-Shaped Quantity Controls */}
       <div className="flex items-center border border-gray-200 rounded-full overflow-hidden bg-gray-50/50">
         <button 
           onClick={() => updateQuantity(item.id, -1)} 
